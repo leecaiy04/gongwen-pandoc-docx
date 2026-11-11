@@ -40,3 +40,24 @@ Windows PowerShell：
 ```
 
 将仓库发布到 GitHub 后，先克隆仓库再执行对应的安装命令。WorkBuddy 平台导入包可通过 `bash scripts/package-workbuddy.sh` 生成。
+
+## GitHub 登录
+
+Linux：
+
+```bash
+bash scripts/github-login.sh
+```
+
+网络较慢时仅对本次登录使用代理，不写入 Git 全局配置：
+
+```bash
+bash scripts/github-login.sh --proxy http://222869.xyz:51082
+```
+
+Windows PowerShell：
+
+```powershell
+.\scripts\github-login.ps1
+.\scripts\github-login.ps1 -Proxy http://222869.xyz:51082
+```
